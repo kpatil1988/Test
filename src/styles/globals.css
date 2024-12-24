@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.bg-hero {
+  background-image: url('/images/site/bg-hero-nature.jpg');
+}
+
+.bg-feature {
+  background-image: url('/images/site/bg-feature.jpg');
+}
+
+.breathe-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: lightblue;
+  transform: scale(1);
+}
+
+.custom-line-height {
+  line-height: 1.5; /* Adjust this value as needed */
+}
